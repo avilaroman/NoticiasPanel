@@ -1,6 +1,6 @@
 {
-  "name": "newsmap",
-  "homepage": "https://newsmap.ijmacd.com/",
+  "name": "NoticiasPanel",
+  "homepage": "https://avilaroman.github.io/NoticiasPanel",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,18 +8,21 @@
     "core-js": "^2.5.3",
     "express": "^4.16.2",
     "express-http-proxy": "^1.1.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-scripts": "1.0.17"
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "xmldom": "^0.1.27"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "proxy": {
     "/api": {
