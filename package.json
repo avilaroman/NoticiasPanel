@@ -18,7 +18,8 @@
   },
   "scripts": {
     "start": "node server.js",
-    "test": "react-scripts test --env=jsdom",
+    //"test": "react-scripts test --env=jsdom",
+    "test": "jest",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "master -d build"
