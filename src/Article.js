@@ -22,7 +22,7 @@ export default function Article ({ item, category, showImage, colours = defaultC
 
   const backgroundColor = getAgedColour(colours[category.id], timeDelta / (1000 * 60 * 60));
 
-  const source = item.sources && item.sources.length && item.sources[0] || item;
+  const source = item.sources && item.sources.length;
 
   return (
     <li className={"Article-li " + (showImage && item.imageURL ? "Article-image" : "")} style={style}>
